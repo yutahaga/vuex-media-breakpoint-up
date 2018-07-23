@@ -167,12 +167,28 @@ export default class BreakpointListener {
    * Update
    */
   protected update() {
+    if (!this.store) {
+      return;
+    }
+
     const newSizeName = this.getSizeName();
 
-    if ((!this.sizeName || this.sizeName !== newSizeName) && this.store) {
-      this.sizeName = newSizeName;
+    if (!this.sizeName) {
+      this.store.commit(MUTATION_CHANGE_VIEWPORT, newSizeName);
+
+      // Fallback
+      // @see https://github.com/yutahaga/vuex-media-breakpoint-up/issues/1
+      setTimeout(() => {
+        if (!this.store) {
+          return;
+        }
+        this.store.commit(MUTATION_CHANGE_VIEWPORT, newSizeName);
+      }, 200);
+    } else {
       this.store.commit(MUTATION_CHANGE_VIEWPORT, newSizeName);
     }
+
+    this.sizeName = newSizeName;
   }
 
   /**

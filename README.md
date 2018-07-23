@@ -39,7 +39,7 @@ const store = new Vuex.Store({
 
 ## Options
 
-```js
+```typescript
 export interface PluginOptions {
   breakpoints: Breakpoints;
   debounceFunction?: (interval: number, listener: EventListenerOrEventListenerObject) => EventListenerOrEventListenerObject;

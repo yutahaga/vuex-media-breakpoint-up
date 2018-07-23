@@ -1,6 +1,6 @@
 {
   "name": "@yutahaga/vuex-media-breakpoint-up",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vuex plugin that likes Bootstrap media-breakpoint-up Sass mixin.",
   "license": "MIT",
   "main": "lib/index.js",

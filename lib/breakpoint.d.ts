@@ -1,5 +1,6 @@
 import { Store } from 'vuex';
 import { Breakpoints, PluginOptions } from './';
+export declare const MUTATION_CHANGE_VIEWPORT: string;
 export interface Breakpoint {
     name: string;
     value: string | number;

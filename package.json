@@ -1,7 +1,7 @@
 {
   "name": "@yutahaga/vuex-media-breakpoint-up",
   "version": "0.1.1",
-  "description": "A Vuex plugin that likes Bootstrap media-breakpoint-up Sass mixin.",
+  "description": "A plugin of Vuex that store current viewport size name.",
   "license": "MIT",
   "main": "dist/index.min.js",
   "types": "dist/index.d.js",

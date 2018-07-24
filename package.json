@@ -1,6 +1,6 @@
 {
   "name": "@yutahaga/vuex-media-breakpoint-up",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A plugin of Vuex that store current viewport size name.",
   "license": "MIT",
   "main": "lib/plugin.js",

@@ -1,4 +1,4 @@
-import createBreakpointPlugin, { MUTATION_CHANGE_VIEWPORT } from '@/index';
+import createBreakpointPlugin, { MUTATION_CHANGE_VIEWPORT } from '@/plugin';
 import { createLocalVue } from '@vue/test-utils';
 import * as Vuex from 'vuex';
 

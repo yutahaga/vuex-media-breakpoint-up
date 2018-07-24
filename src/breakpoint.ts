@@ -1,7 +1,7 @@
 import { Store } from 'vuex';
-import { Breakpoints, PluginOptions } from './';
 import { getClientHeight, getClientWidth } from './client-size';
 import { addEventListener, removeEventListener } from './listener';
+import { Breakpoints, PluginOptions } from './plugin';
 
 const isString = (x: any): x is string => typeof x === 'string';
 

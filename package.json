@@ -3,8 +3,8 @@
   "version": "0.1.1",
   "description": "A plugin of Vuex that store current viewport size name.",
   "license": "MIT",
-  "main": "dist/index.min.js",
-  "types": "dist/index.d.js",
+  "main": "lib/plugin.js",
+  "types": "lib/plugin.d.js",
   "files": [
     "lib"
   ],

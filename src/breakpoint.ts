@@ -1,9 +1,11 @@
 import { Store } from 'vuex';
-import { Breakpoints, MUTATION_CHANGE_VIEWPORT, PluginOptions } from './';
+import { Breakpoints, PluginOptions } from './';
 import { getClientHeight, getClientWidth } from './client-size';
 import { addEventListener, removeEventListener } from './listener';
 
 const isString = (x: any): x is string => typeof x === 'string';
+
+export const MUTATION_CHANGE_VIEWPORT: string = 'CHANGE_VIEWPORT';
 
 export interface Breakpoint {
   name: string;
